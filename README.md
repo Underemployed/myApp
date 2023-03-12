@@ -14,5 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 
 =======
 
-<a>day 1<img src="https://github.com/Underemployed/myApp/blob/main/assets/wood_two.jpg" width=200></a>
+<a>day 1<img src="https://github.com/Underemployed/myApp/blob/main/wood_two.jpg" width=200></a>
 
