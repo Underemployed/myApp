@@ -18,15 +18,24 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blueAccent[300],
     ),
       body:Center(
-        child:Text("body",
+        /*
+        child: Text(
+          "body",
           style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               letterSpacing: 2,
               color: Colors.grey[900],
-              fontFamily: 'IndieFlower'
-          ),
+              fontFamily: 'IndieFlower'),
         ),
+      ),
+
+      */
+        child:Image(
+          image: AssetImage('assets/wood.jpg')
+        ),
+
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
