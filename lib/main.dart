@@ -20,9 +20,19 @@ class Home extends StatelessWidget {
         leading:IconButton(onPressed: (){},icon: Icon(Icons.home),),
           actions: [IconButton(onPressed:(){},icon:Icon(Icons.call)),IconButton(onPressed: (){}, icon:Icon(Icons.more_vert_sharp))],
     ),
-      body:Padding(
-        padding: EdgeInsets.all(90.0),
-        child: Text("Bye"),
+      body:Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Text("hello world"),
+          TextButton(onPressed: (){},child: Text("click"),style: TextButton.styleFrom(backgroundColor:Colors.blueAccent,foregroundColor: Colors.deepPurpleAccent)
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text("Container"),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){},label:Text("CLicl"),icon:Icon(Icons.change_circle_outlined),backgroundColor: Colors.blueAccent[300],
