@@ -19,4 +19,3 @@ samples, guidance on mobile development, and a full API reference.
 <a>day 1<img src="https://github.com/Underemployed/myApp/blob/main/assets/wood_two.jpg" width=200></a>
 
 <a>day 2<img src="https://github.com/Underemployed/myApp/blob/main/assets/day2_rows.png" width=200></a>
-

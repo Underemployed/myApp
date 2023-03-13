@@ -4,7 +4,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-
   home: Home(),
   ));
 class Home extends StatelessWidget {
@@ -15,37 +14,47 @@ class Home extends StatelessWidget {
     var num ='one';
     return Scaffold(
       appBar: AppBar(
-        title:Text("AppBar"),
+        title: Text("ID CARD"),
+        backgroundColor: Colors.red[900],
         centerTitle: true,
-        leading:IconButton(onPressed: (){},icon: Icon(Icons.home),),
-          actions: [IconButton(onPressed:(){},icon:Icon(Icons.call)),IconButton(onPressed: (){}, icon:Icon(Icons.more_vert_sharp))],
-    ),
-      body:Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end
-        ,
-        children: <Widget>[
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text("One"),
-          ),Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.amber,
-            child: Text("Two"),
-          ),Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.pinkAccent,
-            child: Text("Three"),
-          ),
-        ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: (){},label:Text("CLicl"),icon:Icon(Icons.change_circle_outlined),backgroundColor: Colors.blueAccent[300],
+      backgroundColor: Colors.grey[900],
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(30, 40, 30, 10),
+
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage("assets/images.png"),
+                radius: 100,
+              ),
+            ),
+            Divider(
+              height: 60,
+              color: Colors.grey[800],
+            ),
+            Text("Name:",style:TextStyle(letterSpacing: 2.0,fontSize: 25,color: Colors.grey[600])),
+            SizedBox(height: 10,),
+          Text("Unemployed",style:TextStyle(letterSpacing: 2.0,fontSize: 30,color: Colors.amber,fontWeight: FontWeight.bold)),
+            SizedBox(height: 30,),
+            Text("Level:",style:TextStyle(letterSpacing: 2.0,fontSize: 25,color: Colors.grey[600],)),
+            SizedBox(height: 10,),
+            Text("8",style:TextStyle(letterSpacing: 2.0,fontSize: 30,color: Colors.amber,fontWeight: FontWeight.bold)),
+            SizedBox(height: 30,),
+
+            Row(
+              children: <Widget>[
+
+                Icon(Icons.mail,color: Colors.redAccent,size: 30,),
+                SizedBox(width: 5,),
+                Text("unemployed911@gmail.com",style: TextStyle(color: Colors.white,fontSize: 20,))
+              ],
+            )
+          ],
+        ),
       ),
-      );
-
-
-
+    );
   }
 }
