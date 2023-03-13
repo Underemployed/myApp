@@ -20,18 +20,24 @@ class Home extends StatelessWidget {
         leading:IconButton(onPressed: (){},icon: Icon(Icons.home),),
           actions: [IconButton(onPressed:(){},icon:Icon(Icons.call)),IconButton(onPressed: (){}, icon:Icon(Icons.more_vert_sharp))],
     ),
-      body:Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end
+        ,
         children: <Widget>[
-          Text("hello world"),
-          TextButton(onPressed: (){},child: Text("click"),style: TextButton.styleFrom(backgroundColor:Colors.blueAccent,foregroundColor: Colors.deepPurpleAccent)
-          ),
           Container(
+            padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
+            child: Text("One"),
+          ),Container(
             padding: EdgeInsets.all(30.0),
-            child: Text("Container"),
-          )
+            color: Colors.amber,
+            child: Text("Two"),
+          ),Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.pinkAccent,
+            child: Text("Three"),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
@@ -39,50 +45,7 @@ class Home extends StatelessWidget {
       ),
       );
 
-      /*Container(
-        padding: EdgeInsets.symmetric(horizontal:25,vertical: 25),
-        margin: EdgeInsets.all(30.0),
-        child: Text("Hellow"),
-        color: Colors.grey,
 
-
-      ),//container
-
-        child: IconButton(
-          onPressed: (){
-            print("AAAAAAAAAAAAAAAAAAAAA");
-          },
-          icon: Icon(Icons.alternate_email),
-        )
-
-
-        child: Text(
-          "body",
-          style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2,
-              color: Colors.grey[900],
-              fontFamily: 'IndieFlower'),
-        ),
-      ),
-
-
-        child:Image(
-          image: AssetImage('assets/wood.jpg')
-        ),
-
-        child: Icon(
-          Icons.airport_shuttle,
-          color:Colors.lightBlue
-        ),
-
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text("button"),
-        backgroundColor: Colors.blueAccent[200],
-      ), */
 
   }
 }
