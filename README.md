@@ -11,7 +11,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-<<<<<<< HEAD
+
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
@@ -19,10 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 <a>day 1<img src="https://github.com/Underemployed/myApp/blob/main/assets/wood_two.jpg" width=200></a>
 
 <a>day 2<img src="https://github.com/Underemployed/myApp/blob/main/assets/day2_rows.jpg" width=200></a>
-=======
 
-=======
-
-<a>day 1<img src="https://github.com/Underemployed/myApp/blob/main/wood_two.jpg" width=200></a>
-
->>>>>>> ced80d360e45442b5eb9629b904c085e57ae42d3
