@@ -6,9 +6,15 @@ import 'package:flutter/material.dart';
 void main() => runApp(MaterialApp(
   home: Home(),
   ));
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  int ninjalevel=4;
   @override
   Widget build(BuildContext context) {
     var num ='one';
@@ -17,6 +23,14 @@ class Home extends StatelessWidget {
         title: Text("ID CARD"),
         backgroundColor: Colors.red[900],
         centerTitle: true,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            ninjalevel+=1;
+          });
+        },child:Icon(Icons.plus_one),
+        backgroundColor: Colors.green,
       ),
       backgroundColor: Colors.grey[900],
       body: Padding(
@@ -41,7 +55,7 @@ class Home extends StatelessWidget {
             SizedBox(height: 30,),
             Text("Level:",style:TextStyle(letterSpacing: 2.0,fontSize: 25,color: Colors.grey[600],)),
             SizedBox(height: 10,),
-            Text("8",style:TextStyle(letterSpacing: 2.0,fontSize: 30,color: Colors.amber,fontWeight: FontWeight.bold)),
+            Text("$ninjalevel",style:TextStyle(letterSpacing: 2.0,fontSize: 30,color: Colors.amber,fontWeight: FontWeight.bold)),
             SizedBox(height: 30,),
 
             Row(
@@ -58,3 +72,5 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+
