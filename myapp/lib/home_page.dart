@@ -61,9 +61,6 @@ class _CalculatorAppState extends State<CalculatorApp> {
     return MaterialApp(
       title: "Calculator",
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Calculator"),
-        ),
         body: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
