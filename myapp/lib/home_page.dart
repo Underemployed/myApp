@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CalculatorApp extends StatefulWidget {
+  const CalculatorApp({super.key});
+
   @override
   _CalculatorAppState createState() => _CalculatorAppState();
 }
@@ -12,20 +14,19 @@ class _CalculatorAppState extends State<CalculatorApp> {
     return Expanded(
       child: OutlinedButton(
         onPressed: () => buttonPressed(buttonText),
+        style: OutlinedButton.styleFrom(
+          foregroundColor: textColor, backgroundColor: buttonColor,
+          padding: const EdgeInsets.all(24.0),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24.0),
+          ),
+        ),
         child: Text(
           buttonText,
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
             color: textColor,
-          ),
-        ),
-        style: OutlinedButton.styleFrom(
-          primary: textColor,
-          backgroundColor: buttonColor,
-          padding: EdgeInsets.all(24.0),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24.0),
           ),
         ),
       ),
@@ -39,12 +40,12 @@ class _CalculatorAppState extends State<CalculatorApp> {
       } else if (buttonText == "+/-") {
         _output.startsWith("-")
             ? _output = _output.substring(1)
-            : _output = "-" + _output;
+            : _output = "-$_output";
       } else if (buttonText == "%") {
         _output = (double.parse(_output) / 100).toString();
       } else if (buttonText == ".") {
         if (!_output.contains(".")) {
-          _output = _output + ".";
+          _output = "$_output.";
         }
       } else if (buttonText == "=") {
         try {} catch (e) {
@@ -67,10 +68,10 @@ class _CalculatorAppState extends State<CalculatorApp> {
             children: <Widget>[
               Container(
                 alignment: Alignment.centerRight,
-                padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 12.0),
+                padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 12.0),
                 child: Text(
                   _output,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 48.0,
                     fontWeight: FontWeight.bold,
                   ),

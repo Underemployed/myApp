@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/pages/home_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -45,7 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                       BorderRadius.only(topLeft: Radius.circular(70))),
               child: Column(children: [
                 SizedBox(
-                  height: 40,
+                  height: 5,
                 ),
                 Text(
                   "Learning is not Everything",
@@ -72,13 +73,18 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 50,
                 ),
                 Material(
                   color: Color(0xFF674AEF),
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomeScreen()));
+                    },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 60),
