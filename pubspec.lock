@@ -65,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+  cupertino_icons:
+    dependency: "direct main"
+    description:
+      name: cupertino_icons
+      sha256: e35129dc44c9118cee2a5603506d823bab99c68393879edb440e0090d07586be
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -94,14 +102,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_lints:
-    dependency: "direct dev"
+  flutter_screenutil:
+    dependency: "direct main"
     description:
-      name: flutter_lints
-      sha256: aeb0b80a8b3709709c9cc496cdc027c5b3216796bc0af0ce1007eaf24464fd4c
+      name: flutter_screenutil
+      sha256: "0a122936b450324cbdfd51be0819cc6fcebb093eb65585e9cd92263f7a1a8a39"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
+    version: "5.7.0"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -147,14 +155,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
-  lints:
-    dependency: transitive
-    description:
-      name: lints
-      sha256: "5e4a9cd06d447758280a8ac2405101e0e2094d2a1dbdd3756aec3fe7775ba593"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.1"
   matcher:
     dependency: transitive
     description:
@@ -275,6 +275,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.4"
+  size_config:
+    dependency: "direct main"
+    description:
+      name: size_config
+      sha256: "912d8e55bb563a71e30f66be0719d2a6437c3500adb01b9e52681dc2362d62e0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3"
   sizer:
     dependency: "direct main"
     description:

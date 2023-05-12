@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/welcome_screen.dart';
+import 'package:myapp/pages/builder_page/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
-      home: WelcomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
